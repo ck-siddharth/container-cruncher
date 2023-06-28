@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+
+
+
+.card {
+  background-color: cadetblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* .fade-left-container {
+  position: relative;
+}
+
+.fade-left-item {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: fadeLeft 1.5s ease-in-out forwards;
+} */
+
+
+
+/* Data.css */
+@media (max-width: 480px) {
+  .MuiAccordionDetails-root {
+    max-width: 250px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slideRight {
   from {
-    transform: rotate(0deg);
+    transform: translateX(100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
 }
+
+.slide-left-animation div {
+  animation: slideLeft 5s;
+}
+
+.slide-right-animation div {
+  animation: slideRight 5s;
+}
+
+
+
+
+
+
+
+
+
+
+
